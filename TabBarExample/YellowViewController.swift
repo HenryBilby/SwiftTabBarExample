@@ -39,10 +39,17 @@ class YellowViewController: UIViewController {
     
     private func getHoraDaPickerView() -> String {
         let indiceHoraSelecionada = horaPickerView.selectedRow(inComponent: 0)
-        let indiceMinutoSelecionado = horaPickerView.selectedRow(inComponent: 1)
+        var indiceMinutoSelecionado = horaPickerView.selectedRow(inComponent: 1)
         let indiceAmPmSelecionado = horaPickerView.selectedRow(inComponent: 2)
+
+        print ("Indice minuto selecionado: \(indiceMinutoSelecionado) resto da divisão: \(indiceMinutoSelecionado%arrayMinutos.count)")
         
         let hora = arrayHoras[indiceHoraSelecionada]
+        
+        if (indiceMinutoSelecionado >= self.arrayMinutos.count) {
+            indiceMinutoSelecionado %= self.arrayMinutos.count
+        }
+
         let minuto = arrayMinutos[indiceMinutoSelecionado]
         let amPm = arrayAMPM[indiceAmPmSelecionado]
         
@@ -69,7 +76,11 @@ class YellowViewController: UIViewController {
 }
 
 extension YellowViewController: UIPickerViewDelegate{
-    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        if component == 1 {
+
+        }
+    }
 }
 
 extension YellowViewController: UIPickerViewDataSource {
@@ -82,7 +93,7 @@ extension YellowViewController: UIPickerViewDataSource {
             case 0:
                 return self.arrayHoras.count
             case 1:
-                return self.arrayMinutos.count
+                return 20*self.arrayMinutos.count
             case 2:
                 return self.arrayAMPM.count
             default:
@@ -96,7 +107,7 @@ extension YellowViewController: UIPickerViewDataSource {
             case 0:
                 return self.arrayHoras[row]
             case 1:
-                return self.arrayMinutos[row]
+                return self.arrayMinutos[row % arrayMinutos.count]
             case 2:
                 return self.arrayAMPM[row]
             default:
