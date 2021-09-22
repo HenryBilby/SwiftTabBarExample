@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--Somar-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TabBarExample" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Somar" id="BYZ-38-t0r" customClass="ViewController" customModule="TabBarExample" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -74,7 +74,7 @@
                             <constraint firstItem="IjG-aX-edk" firstAttribute="top" secondItem="3F0-le-Q3z" secondAttribute="bottom" constant="16" id="u0s-Q6-gWA"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="fOE-bU-FS2"/>
+                    <tabBarItem key="tabBarItem" title="Somar" id="fOE-bU-FS2"/>
                     <connections>
                         <outlet property="op1TextField" destination="3F0-le-Q3z" id="aRE-Wl-hLT"/>
                         <outlet property="op2TextField" destination="IjG-aX-edk" id="dqa-fY-wYg"/>
@@ -85,7 +85,7 @@
             </objects>
             <point key="canvasLocation" x="1258" y="-313"/>
         </scene>
-        <!--Item-->
+        <!--Alarme-->
         <scene sceneID="G7v-hi-a5h">
             <objects>
                 <viewController id="78X-pN-hg0" customClass="YellowViewController" customModule="TabBarExample" customModuleProvider="target" sceneMemberID="viewController">
@@ -136,7 +136,7 @@
                             <constraint firstItem="DbT-pP-Syk" firstAttribute="leading" secondItem="5tK-Yf-rxh" secondAttribute="leading" constant="16" id="zKA-me-uQd"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="wg6-q4-yQd"/>
+                    <tabBarItem key="tabBarItem" title="Alarme" id="wg6-q4-yQd"/>
                     <connections>
                         <outlet property="horaLabel" destination="DBr-ep-pfu" id="Fix-3x-Ob8"/>
                         <outlet property="horaPickerView" destination="DbT-pP-Syk" id="2FT-q6-ci1"/>
@@ -146,7 +146,7 @@
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="806.91964285714278"/>
         </scene>
-        <!--Item-->
+        <!--Subtrair-->
         <scene sceneID="mwP-oY-BIy">
             <objects>
                 <viewController id="s2z-Ub-Le7" customClass="OrangeViewController" customModule="TabBarExample" customModuleProvider="target" sceneMemberID="viewController">
@@ -212,7 +212,7 @@
                             <constraint firstItem="cyB-5q-skP" firstAttribute="leading" secondItem="oZU-vu-Qo0" secondAttribute="leading" constant="16" id="vni-7P-1o1"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="zal-Oj-aik"/>
+                    <tabBarItem key="tabBarItem" title="Subtrair" id="zal-Oj-aik"/>
                     <connections>
                         <outlet property="op1TextField" destination="Sop-lm-EwZ" id="nnw-WP-KEB"/>
                         <outlet property="op2TextField" destination="Vnb-yR-mVD" id="Fh2-B5-Cyj"/>

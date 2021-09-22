@@ -41,8 +41,6 @@ class YellowViewController: UIViewController {
         let indiceHoraSelecionada = horaPickerView.selectedRow(inComponent: 0)
         var indiceMinutoSelecionado = horaPickerView.selectedRow(inComponent: 1)
         let indiceAmPmSelecionado = horaPickerView.selectedRow(inComponent: 2)
-
-        print ("Indice minuto selecionado: \(indiceMinutoSelecionado) resto da divisão: \(indiceMinutoSelecionado%arrayMinutos.count)")
         
         let hora = arrayHoras[indiceHoraSelecionada]
         
@@ -77,8 +75,8 @@ class YellowViewController: UIViewController {
 
 extension YellowViewController: UIPickerViewDelegate{
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        if component == 1 {
-
+        if component == 1 && row == 59{
+            self.horaPickerView.reloadComponent(component)
         }
     }
 }

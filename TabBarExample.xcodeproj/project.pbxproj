@@ -17,6 +17,7 @@
 		E008F56926F55B3200BDCEDB /* TabBarExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E008F56826F55B3200BDCEDB /* TabBarExampleUITests.swift */; };
 		E008F57726F55E3300BDCEDB /* OrangeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E008F57626F55E3300BDCEDB /* OrangeViewController.swift */; };
 		E008F57926F55E4900BDCEDB /* YellowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E008F57826F55E4900BDCEDB /* YellowViewController.swift */; };
+		E008F57B26F952ED00BDCEDB /* Calculadora.swift in Sources */ = {isa = PBXBuildFile; fileRef = E008F57A26F952ED00BDCEDB /* Calculadora.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		E008F56A26F55B3200BDCEDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E008F57626F55E3300BDCEDB /* OrangeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrangeViewController.swift; sourceTree = "<group>"; };
 		E008F57826F55E4900BDCEDB /* YellowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YellowViewController.swift; sourceTree = "<group>"; };
+		E008F57A26F952ED00BDCEDB /* Calculadora.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculadora.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				E008F55426F55B3200BDCEDB /* Info.plist */,
 				E008F57626F55E3300BDCEDB /* OrangeViewController.swift */,
 				E008F57826F55E4900BDCEDB /* YellowViewController.swift */,
+				E008F57A26F952ED00BDCEDB /* Calculadora.swift */,
 			);
 			path = TabBarExample;
 			sourceTree = "<group>";
@@ -267,6 +270,7 @@
 				E008F57726F55E3300BDCEDB /* OrangeViewController.swift in Sources */,
 				E008F54B26F55B3100BDCEDB /* ViewController.swift in Sources */,
 				E008F54726F55B3100BDCEDB /* AppDelegate.swift in Sources */,
+				E008F57B26F952ED00BDCEDB /* Calculadora.swift in Sources */,
 				E008F54926F55B3100BDCEDB /* SceneDelegate.swift in Sources */,
 				E008F57926F55E4900BDCEDB /* YellowViewController.swift in Sources */,
 			);
